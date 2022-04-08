@@ -9,19 +9,23 @@
 /* Begin PBXBuildFile section */
 		69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF52800EA9B0082C501 /* AppDelegate.swift */; };
 		69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */; };
-		69A5DBFA2800EA9B0082C501 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF92800EA9B0082C501 /* ViewController.swift */; };
+		69A5DBFA2800EA9B0082C501 /* NewOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF92800EA9B0082C501 /* NewOrderViewController.swift */; };
 		69A5DBFF2800EA9D0082C501 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DBFE2800EA9D0082C501 /* Assets.xcassets */; };
 		69A5DC022800EA9D0082C501 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A5DC002800EA9D0082C501 /* LaunchScreen.storyboard */; };
+		69A5DC0A2800F6160082C501 /* PastOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC092800F6160082C501 /* PastOrderViewController.swift */; };
+		69A5DC0C2800F7100082C501 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DC0B2800F7100082C501 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		69A5DBF22800EA9B0082C501 /* BotShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A5DBF52800EA9B0082C501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69A5DBF92800EA9B0082C501 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69A5DBF92800EA9B0082C501 /* NewOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderViewController.swift; sourceTree = "<group>"; };
 		69A5DBFE2800EA9D0082C501 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69A5DC012800EA9D0082C501 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69A5DC032800EA9D0082C501 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A5DC092800F6160082C501 /* PastOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastOrderViewController.swift; sourceTree = "<group>"; };
+		69A5DC0B2800F7100082C501 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +60,9 @@
 			children = (
 				69A5DBF52800EA9B0082C501 /* AppDelegate.swift */,
 				69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */,
-				69A5DBF92800EA9B0082C501 /* ViewController.swift */,
+				69A5DBF92800EA9B0082C501 /* NewOrderViewController.swift */,
+				69A5DC092800F6160082C501 /* PastOrderViewController.swift */,
+				69A5DC0B2800F7100082C501 /* TabBarController.swift */,
 				69A5DBFE2800EA9D0082C501 /* Assets.xcassets */,
 				69A5DC002800EA9D0082C501 /* LaunchScreen.storyboard */,
 				69A5DC032800EA9D0082C501 /* Info.plist */,
@@ -134,9 +140,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69A5DBFA2800EA9B0082C501 /* ViewController.swift in Sources */,
+				69A5DBFA2800EA9B0082C501 /* NewOrderViewController.swift in Sources */,
 				69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */,
 				69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */,
+				69A5DC0C2800F7100082C501 /* TabBarController.swift in Sources */,
+				69A5DC0A2800F6160082C501 /* PastOrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
