@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69925DBE281B54A00034BC0A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69925DBD281B54A00034BC0A /* Item.swift */; };
 		69927EBD28175D28007FE6F9 /* NewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69927EBC28175D28007FE6F9 /* NewItemCell.swift */; };
 		69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF52800EA9B0082C501 /* AppDelegate.swift */; };
 		69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		69925DBD281B54A00034BC0A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		69927EBC28175D28007FE6F9 /* NewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemCell.swift; sourceTree = "<group>"; };
 		69A5DBF22800EA9B0082C501 /* BotShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A5DBF52800EA9B0082C501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				69A5DBF52800EA9B0082C501 /* AppDelegate.swift */,
 				69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */,
+				69925DBD281B54A00034BC0A /* Item.swift */,
 				69A5DBF92800EA9B0082C501 /* NewOrderViewController.swift */,
 				69A5DC092800F6160082C501 /* PastOrderViewController.swift */,
 				69A5DC0B2800F7100082C501 /* TabBarController.swift */,
@@ -147,6 +150,7 @@
 				69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */,
 				69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */,
 				69A5DC0C2800F7100082C501 /* TabBarController.swift in Sources */,
+				69925DBE281B54A00034BC0A /* Item.swift in Sources */,
 				69A5DC0A2800F6160082C501 /* PastOrderViewController.swift in Sources */,
 				69927EBD28175D28007FE6F9 /* NewItemCell.swift in Sources */,
 			);
