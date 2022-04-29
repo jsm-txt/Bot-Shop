@@ -1,13 +1,15 @@
 //
-//  PastOrderViewController.swift
+//  OrderList.swift
 //  BotShop
 //
-//  Created by Jose Salazar Mendez on 4/8/22.
+//  Created by Jose Salazar Mendez on 4/28/22.
 //
+
 import Foundation
 import UIKit
 
-class PastOrderViewController: UIViewController {
+class OrderList: UIViewController {
+
     let orders = [
         Order(title: "July 2020", image: UIImage(named: "box")!),
         Order(title: "June 2020", image: UIImage(named: "box")!),
@@ -15,7 +17,8 @@ class PastOrderViewController: UIViewController {
         Order(title: "December 2019", image: UIImage(named: "box")!),
         Order(title: "November 2019", image: UIImage(named: "box")!),
         Order(title: "October 2019", image: UIImage(named: "box")!),
-        Order(title: "September 2019", image: UIImage(named: "box")!)]
+        Order(title: "September 2019", image: UIImage(named: "box")!)
+    ]
 
     let tableView =  UITableView()
 
@@ -40,27 +43,21 @@ class PastOrderViewController: UIViewController {
 
 }
 
-extension PastOrderViewController: UITableViewDataSource, UITableViewDelegate {
+extension OrderList: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return orders.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderCell
-            cell.accessoryType = .disclosureIndicator
-            cell.selectionStyle = .none
-        cell.setCellContents(item: orders[indexPath.row])
+        cell.accessoryType = .disclosureIndicator
+        cell.selectionStyle = .none
+        cell.setBoxContents(box: orders[indexPath.row])
         return cell
     }
+
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100.0
     }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("selected!")
-        let nextVC: OrderList = OrderList()
-        self.navigationController?.pushViewController(nextVC, animated: true)
-    }
-
 
 }

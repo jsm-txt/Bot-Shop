@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		69925DBE281B54A00034BC0A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69925DBD281B54A00034BC0A /* Item.swift */; };
 		69925DC0281B5CE80034BC0A /* pastOrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69925DBF281B5CE80034BC0A /* pastOrderCell.swift */; };
+		69925DC2281B620D0034BC0A /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69925DC1281B620D0034BC0A /* Order.swift */; };
+		69925DC4281B64420034BC0A /* OrderList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69925DC3281B64420034BC0A /* OrderList.swift */; };
 		69927EBD28175D28007FE6F9 /* NewItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69927EBC28175D28007FE6F9 /* NewItemCell.swift */; };
 		69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF52800EA9B0082C501 /* AppDelegate.swift */; };
 		69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */; };
@@ -22,6 +24,8 @@
 /* Begin PBXFileReference section */
 		69925DBD281B54A00034BC0A /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		69925DBF281B5CE80034BC0A /* pastOrderCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pastOrderCell.swift; sourceTree = SOURCE_ROOT; };
+		69925DC1281B620D0034BC0A /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = SOURCE_ROOT; };
+		69925DC3281B64420034BC0A /* OrderList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderList.swift; sourceTree = "<group>"; };
 		69927EBC28175D28007FE6F9 /* NewItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemCell.swift; sourceTree = "<group>"; };
 		69A5DBF22800EA9B0082C501 /* BotShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BotShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69A5DBF52800EA9B0082C501 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +68,8 @@
 		69A5DBF42800EA9B0082C501 /* BotShop */ = {
 			isa = PBXGroup;
 			children = (
+				69925DC1281B620D0034BC0A /* Order.swift */,
+				69925DC3281B64420034BC0A /* OrderList.swift */,
 				69925DBF281B5CE80034BC0A /* pastOrderCell.swift */,
 				69A5DBF52800EA9B0082C501 /* AppDelegate.swift */,
 				69A5DBF72800EA9B0082C501 /* SceneDelegate.swift */,
@@ -151,7 +157,9 @@
 			files = (
 				69A5DBFA2800EA9B0082C501 /* NewOrderViewController.swift in Sources */,
 				69A5DBF62800EA9B0082C501 /* AppDelegate.swift in Sources */,
+				69925DC4281B64420034BC0A /* OrderList.swift in Sources */,
 				69925DC0281B5CE80034BC0A /* pastOrderCell.swift in Sources */,
+				69925DC2281B620D0034BC0A /* Order.swift in Sources */,
 				69A5DBF82800EA9B0082C501 /* SceneDelegate.swift in Sources */,
 				69A5DC0C2800F7100082C501 /* TabBarController.swift in Sources */,
 				69925DBE281B54A00034BC0A /* Item.swift in Sources */,
