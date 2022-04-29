@@ -9,16 +9,18 @@ import Foundation
 import UIKit
 
 class OrderList: UIViewController {
-
-    let orders = [
-        Order(title: "July 2020", image: UIImage(named: "box")!),
-        Order(title: "June 2020", image: UIImage(named: "box")!),
-        Order(title: "May 2020", image: UIImage(named: "box")!),
-        Order(title: "December 2019", image: UIImage(named: "box")!),
-        Order(title: "November 2019", image: UIImage(named: "box")!),
-        Order(title: "October 2019", image: UIImage(named: "box")!),
-        Order(title: "September 2019", image: UIImage(named: "box")!)
-    ]
+    var currentOrder: Order!
+    var orderItems: [Item] = []
+//
+//    let orders = [
+//        Order(title: "July 2020", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "June 2020", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "May 2020", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "December 2019", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "November 2019", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "October 2019", image: UIImage(named: "box")!, items: <#[Item]#>),
+//        Order(title: "September 2019", image: UIImage(named: "box")!, items: <#[Item]#>)
+//    ]
 
     let tableView =  UITableView()
 
@@ -45,14 +47,14 @@ class OrderList: UIViewController {
 
 extension OrderList: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return orders.count
+        return currentOrder.items.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderCell
-        cell.accessoryType = .disclosureIndicator
-        cell.selectionStyle = .none
-        cell.setBoxContents(box: orders[indexPath.row])
+            cell.accessoryType = .disclosureIndicator
+            cell.selectionStyle = .none
+        cell.setCellContents(item: currentOrder.items[indexPath.row])
         return cell
     }
 
