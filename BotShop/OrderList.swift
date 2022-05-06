@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class OrderList: UIViewController {
-    var currentOrder: Order!
+    var currentOrder: Order?
     var orderItems: [Item] = []
 //
 //    let orders = [
@@ -47,14 +47,22 @@ class OrderList: UIViewController {
 
 extension OrderList: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return currentOrder.items.count
+        
+        if let currentOrder = currentOrder{
+            return currentOrder.items.count
+        }
+        return 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderCell
             cell.accessoryType = .disclosureIndicator
             cell.selectionStyle = .none
-        cell.setCellContents(item: currentOrder.items[indexPath.row])
+        
+        if let currentOrder = currentOrder{
+            cell.setCellContents(item: currentOrder.items[indexPath.row])
+        }
+        
         return cell
     }
 

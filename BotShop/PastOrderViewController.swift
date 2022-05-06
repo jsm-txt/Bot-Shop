@@ -71,7 +71,7 @@ extension PastOrderViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PastOrderCell
             cell.accessoryType = .disclosureIndicator
             cell.selectionStyle = .none
-        cell.setCellContents(item: orders[indexPath.row])
+        //cell.setCellContents(item: orders[indexPath.row])
         cell.textLabel?.text = "\(indexPath.row + 1) \(orders[indexPath.row].title)"
         cell.setBoxContents(box: orders[indexPath.row])
         return cell

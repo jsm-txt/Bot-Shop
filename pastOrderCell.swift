@@ -56,7 +56,7 @@ class PastOrderCell: UITableViewCell{
     }
     
     
-    func setCellContents(item: Order){
+    func setCellContents(item: Item){
         itemImage.image = item.image
         title.text = item.title
     }

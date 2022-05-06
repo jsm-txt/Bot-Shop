@@ -17,6 +17,7 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate{
         super.viewDidLoad()
         setupViewControllers()
         setupTabBarIcons()
+        self.tabBar.tintColor = UIColor(red:0.49, green:0.84, blue:0.87, alpha:1.0)
     }
     
     func setupTabBarIcons(){
